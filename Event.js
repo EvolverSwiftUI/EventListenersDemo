@@ -69,7 +69,27 @@ let inputElement = document.createElement("input");
 function printKeyDown() {
     console.log("key pressed");
 }
-inputElement.addEventListener("keydown", printKeyDown);
+function printKeyDown1(event) {
+    // console.log(event.type);
+   // console.log(event.target);
+    console.log(event.key);    
+}
+inputElement.addEventListener("keydown", printKeyDown1);
 document.body.appendChild(inputElement);
 
+// Event Object
+/*
+whenever an event happens,
+the browser creates an event object.
 
+It contains information about the event 
+that has happened.
+
+It consists of diffent properties and methods
+1. type
+2. target
+3. key
+4. timestamp
+5. stopPropagation
+......................etc.
+*/
