@@ -50,5 +50,26 @@ greetBtn3.addEventListener("click", function() {
 }); 
 
 // More Events
+/*
+    Events are the actions by which the user or browser 
+    interact with HTML elements. 
+    1. Keyboard Events
+        1.1. Keydown
+        1.2. Keyup
+    2. Mouse Events
+    3. Touch Events
+    ............etc.
+*/
+// Keydown - event
+/* This event occurs when key is pressed down.  */
+
+
+
+let inputElement = document.createElement("input");
+function printKeyDown() {
+    console.log("key pressed");
+}
+inputElement.addEventListener("keydown", printKeyDown);
+document.body.appendChild(inputElement);
 
 
